@@ -1,0 +1,179 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --fontprincipal: Arial, Helvetica, sans-serif;
+    --fontsegundaria:'Kdam Thmor Pro', sans-serif;
+    
+}
+
+header {
+  
+    height:70px;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    
+}
+
+nav {
+    width: 60%;
+ 
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: var(--fontsegundaria);
+}
+
+li:hover {
+    color: #d21617;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+}
+
+h1 {
+    color: white;
+    font-family: var(--fontsegundaria);
+    text-align: center;
+    font-size: 19px;
+    justify-content: space-around;
+}
+
+main {
+    margin: 5px 0 5px 0;
+}
+#form-contato {
+
+    font-family: var(--fontsegundaria);
+    text-align: center;
+    color: #fff;
+}
+
+input {
+    background-color: aliceblue;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+textarea {
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#enviar {
+    background-color: #d21617;
+    color: white;
+    border: solid red;
+    border-radius: 5px;
+}
+
+#enviar:hover {
+    background-color: white;
+    border: solid #fff;
+    color: black;
+}
+footer {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+span {
+    color: #fff;
+    font-family: var(--fontsegundaria);
+}
+
+.footer-navigation {
+    display: none;
+
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+@media(max-width: 768px){
+    .footer-navigation {
+        display: block;
+    }
+    
+    nav {
+        display:none;
+    }
+
+    #banner {
+        background-position: 40%;
+    }
+
+    #trailre-container {
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .trailer {
+        width: 100%;
+    }
+
+    #sinopse {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+
+    .description {
+        width: 100%;
+    }
+
+    .button {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .cards-content {
+        grid-template-columns: 1fr;
+        margin-top: 150px;
+    }
+}
